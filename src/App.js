@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import AdvisorList from "./components/AdvisorList";
+import Footer from "./components/Footer";
+import MentorList from "./components/MentorList";
+import Universitylist from "./components/Universitylist";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='mx-6 md:mx-16 lg:mx-32 h-screen font-Montserrat'>
+      <Universitylist/>
+      <MentorList/>
+      <AdvisorList/>
+      <Footer/>
     </div>
   );
 }
